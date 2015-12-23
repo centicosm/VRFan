@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC16F1455" mcc_version="v2.25.2">
+    <managers>
+        <manager generated="true" name="Pin Manager" reloadPin="manual">
+            <setting name="P2SEL" option="RC3"/>
+            <setting name="SDOSEL" option="RC2"/>
+            <setting name="SSSEL" option="RC3"/>
+            <setting name="CLKRSEL" option="RA4"/>
+            <setting name="T1GSEL" option="RA4"/>
+            <setting name="package" option="SOIC14"/>
+            <setting name="sorting" option="true"/>
+            <resource customName="IO_RA4" digital="true" direction="OUTPUT" function="RA4" ioc="0" module="GPIO" name="RA4" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RA5" digital="true" direction="OUTPUT" function="RA5" ioc="0" module="GPIO" name="RA5" start="false" type="pin" wpu="false"/>
+            <resource customName="LEDPIN" digital="true" direction="OUTPUT" function="RC2" module="GPIO" name="RC2" start="false" type="pin" wpu="false"/>
+            <resource customName="FANPIN" digital="true" direction="OUTPUT" function="RC3" module="GPIO" name="RC3" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RC4" digital="true" direction="OUTPUT" function="RC4" module="GPIO" name="RC4" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RC5" digital="true" direction="OUTPUT" function="RC5" module="GPIO" name="RC5" start="false" type="pin" wpu="false"/>
+            <file checksum="2586016780" modified="false" name="pin_manager.c" path="mcc_generated_files/pin_manager.c"/>
+            <file checksum="1480648912" modified="false" name="pin_manager.h" path="mcc_generated_files/pin_manager.h"/>
+        </manager>
+        <manager generated="true" name="System" reloadPin="manual">
+            <initializer comment="" name="Initialize">
+                <setting name="SPLLEN" option="enabled" register="OSCCON"/>
+                <setting name="SCS" option="INTOSC" register="OSCCON"/>
+                <setting name="IRCF" option="16MHz_HF" register="OSCCON"/>
+                <setting name="SPLLMULT" option="4xPLL" register="OSCCON"/>
+                <setting name="OSTS" option="intosc" register="OSCSTAT"/>
+                <setting name="HFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="HFIOFS" option="not0.5percent_acc" register="OSCSTAT"/>
+                <setting name="SOSCR" option="disabled" register="OSCSTAT"/>
+                <setting name="PLLRDY" option="disabled" register="OSCSTAT"/>
+                <setting name="LFIOFR" option="disabled" register="OSCSTAT"/>
+                <setting name="TUN" option="0x0" register="OSCTUNE"/>
+                <additionalSetting name="pllMultiplier" option=""/>
+                <additionalSetting name="extclk" option="1.0 MHz"/>
+            </initializer>
+            <setting name="IESO" option="OFF"/>
+            <setting name="BOREN" option="OFF"/>
+            <setting name="PWRTE" option="OFF"/>
+            <setting name="FOSC" option="INTOSC"/>
+            <setting name="FCMEN" option="OFF"/>
+            <setting name="MCLRE" option="OFF"/>
+            <setting name="CP" option="OFF"/>
+            <setting name="WDTE" option="OFF"/>
+            <setting name="CLKOUTEN" option="OFF"/>
+            <setting name="WRT" option="OFF"/>
+            <setting name="LPBOR" option="OFF"/>
+            <setting name="PLLMULT" option="3x"/>
+            <setting name="LVP" option="OFF"/>
+            <setting name="USBLSCLK" option="48MHz"/>
+            <setting name="STVREN" option="ON"/>
+            <setting name="PLLEN" option="ENABLED"/>
+            <setting name="BORV" option="LO"/>
+            <setting name="CPUDIV" option="NOCLKDIV"/>
+            <setting name="generateConfigBits" option="true"/>
+            <file checksum="1188216146" modified="true" name="mcc.c" path="mcc_generated_files/mcc.c"/>
+            <file checksum="2914190622" modified="false" name="mcc.h" path="mcc_generated_files/mcc.h"/>
+        </manager>
+    </managers>
+    <modules>
+        <module generated="true" mode="GPIO" name="GPIO" order="0" reloadPin="manual" type="GPIO">
+            <resource customName="FANPIN" digital="true" direction="OUTPUT" function="RC3" module="GPIO" name="RC3" start="false" type="pin" wpu="false"/>
+            <resource customName="LEDPIN" digital="true" direction="OUTPUT" function="RC2" module="GPIO" name="RC2" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RC4" digital="true" direction="OUTPUT" function="RC4" module="GPIO" name="RC4" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RC5" digital="true" direction="OUTPUT" function="RC5" module="GPIO" name="RC5" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RA5" digital="true" direction="OUTPUT" function="RA5" ioc="0" module="GPIO" name="RA5" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RA4" digital="true" direction="OUTPUT" function="RA4" ioc="0" module="GPIO" name="RA4" start="false" type="pin" wpu="false"/>
+        </module>
+    </modules>
+</configuration>
