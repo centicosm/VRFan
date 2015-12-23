@@ -1,0 +1,12 @@
+PIC16f1455 SOIC
+330 1/4W Resistor
+1K 1/4W Resistor
+10K 1/4W Resistor
+USB-A Male header
+USB-A Male header
+5-pin .1 Header for ICSP (optional)
+2n222A 
+3mm LED
+1N4001 Diode
+.47uF Capacitor
+.01uF Capacitor
